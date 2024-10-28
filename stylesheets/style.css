@@ -1,87 +1,173 @@
 
 * {
-    background-color: #2b2b2b;
+    background-color: #ebe3d9 ;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 200;
-    color: #fffffe;
+    color: #001F3F;
+}
+
+body {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 h1  {
-    color: #fffffe;
+    background-color: #001F3F;
+    color: wheat;
     text-align: center;
-    font-weight: bold;   
-}
-/* Tengo que modificar este resultado, no estoy conforme
-ul {
-    list-style-type: none;
-    margin: 0%;
-    padding: 0%;
-    width: fit-content;
-    text-align: center;
-}
-*/
-a:hover {
-    text-decoration: none;
-    font-size: 150%;
-    transition: all 0.3s ease;
+    font-weight: bold;
+    margin-top: 0px;   
 }
 
-nav a:hover {
-    text-decoration: underline;
+h2 {
+    color:#001F3F;
+    text-align: start;
+    font-weight: bold;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 300px;
+    perspective: 1000px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    background-color: transparent;
+    color: wheat;
+  }
+  
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px transparent;
+    border-radius: 1.5rem;
+    overflow: hidden;
+  }
+  
+  .flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsionarse */
+  position: absolute; /* Coloca la imagen en el fondo */
+  top: 0;
+  left: 0;
+  border-radius: 1rem; /* Hace que la imagen coincida con el borde de la tarjeta */
+  
+}
+
+
+  .flip-card-front {
+    background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
+       rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+    color: coral;
+  }
+  
+  .flip-card-back {
+    background-color: #001F3F;
+    transform: rotateY(180deg);
+  }
+
+
+a {
+    text-decoration: none;
+    font-size: 2.0rem;
+    font-weight: bold;
+}
+
+nav {
+    display: inline;
+    text-align: center;
+    padding: 5px;
     
 }
 
-#photo {
-    width: 200px;
-    height: auto;
+nav ul {
+    list-style-type: none;
+    
 }
 
+nav li{
+    display: inline-block;
+    padding: 10px 20px;
+    
+}
+
+nav a:hover {
+    text-decoration:solid;
+    font-size: 225%;
+    transition: all 0.3s ease-in-out;
+}
+
+
 .subtitle {
-    color: #fffffe;
+    color: #001F3F;
+    font-size: 2.2rem;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
 section {
-    
-    margin: 4px 2px 8px 2px;
-    border: 0.2pt solid #cedddd;
+    margin: 10px 10px 10px 10px;
+    border: transparent;
     padding: 1.5% 0.8%;
     padding-left: 1.2%;
     padding-right: 1.2%;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    box-shadow: 3px 3px 1px 0px rgba(159, 101, 226, 0.295);
+}
+
+#contacto , #resumen {
+    
+    margin: 10px 10px 10px 10px;
+    border: transparent;
+    padding: 1.5% 0.8%;
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 3px 3px 5px #001F3F;
     
 }
+
+.sobremi{
+    padding: 30px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
  
-.mapa{
-    overflow: hidden;
-    width: 300px;
-    height: 250px;
-    transition: all 0.3s ease;
-}
 
-.mapa:hover {
-    width: 500px;
-    height: 300px;
-
-}
-
-iframe{
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 3%;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-}
-
-section form {
-    display: grid;
-    row-gap: 0.5rem;
+#educacion li {
+    font-weight: 600;
 }
 
 /* Por Flex
@@ -107,7 +193,7 @@ section form {
     display: grid;
     justify-content: space-around;
     align-items: stretch;
-    grid-template-areas: "A D" "B D" 
+    grid-template-areas: "A A" "B D" 
 }    
 
 #resumen h2{
@@ -119,3 +205,117 @@ section form {
 #resumen img{
     grid-area: B;
 }
+
+label {
+    font-weight: 500;
+}
+
+
+#contacto .wrapper1 {
+    padding-top: 10px ;
+    text-align: left;
+    grid-template-columns: repeat(2,minmax(800px,200px));
+}
+
+
+.wrapper2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    
+}
+
+.wrapper1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+    gap: 20px;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 3%;
+    margin-left: 20px;
+}
+
+.mapa {
+    width: 550px;
+    height: 400px;
+    transition: all 0.3s ease;
+}
+
+
+.mapa:hover{
+    width: 700px;
+    height: 450px;
+    
+}
+
+
+
+
+button {
+    --button_radius: 0.75em;
+    --button_color: #e8e8e8;
+    --button_outline_color: #001F3F;
+    font-size: 20px;
+    font-weight: bold;
+    border: transparent;
+    cursor: pointer;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+    padding: 0rem 0rem;
+    
+}
+
+.button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+  
+button:hover .button_top {
+    transform: translateY(-0.33em);
+}
+  
+button:active .button_top {
+    transform: translateY(0);
+}
+
+#formularioContacto ul {
+    padding: 10px;
+    border: 5px solid transparent;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    list-style: none;
+}
+
+#formularioContacto li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+#formularioContacto label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #001F3F;
+    font-weight: bold;
+}
+
+#formularioContacto input,textarea {
+    padding: 10px;
+    border: 3px solid #001F3F;
+    border-radius: 3px;
+    font-size: 1.1rem;
+}
+  
+  

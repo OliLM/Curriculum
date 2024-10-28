@@ -9,37 +9,40 @@
     <body>
         <header>
         <h1>Olivier Raphael Leon Marquez</h1>
-        <h2> Estudiante de Computación</h2>
-        <h3 style="text-align: center;">------------------------------------------------------------------------------------------------------------------------------------------------</h3>
-        <table>
-            <tr>
-                <ul>
-                    <li> Guayaquil </li>
-                    <li> 23 años </li>
-                    <li>oliviermr88@gmail.com</li>
-                    <li> 0979456548 </li>
-                </ul>
-            </tr>
-            <tr>
-                <ul>
-                    
-                </ul>
-            </tr>
-        </table>
         </header>
-        <h3 style="text-align: center;">------------------------------------------------------------------------------------------------------------------------------------------------</h3>
         <nav>
-            <a href="#educacion">Formación Acádemica </a><br>
-            <a href="#resumen">Resumen</a><br>
-            <a href="#experiencia">Experiencia</a><br>
-            <a href="#mapa">Ubicación</a><br>
-            <a href="#formulario">Contáctame</a><br>
+            <ul>
+                <li><a href="#educacion">Formación Acádemica </a></li>
+                <li><a href="#resumen">Acerca de mi</a></li>
+                <li><a href="#experiencia">Habilidades Técnicas</a></li>
+                <li><a href="#contacto">Contáctame</a></li>
+            </ul>
         </nav>    
 
         <section id="resumen">
-            <h2 class="subtitle">Resumen</h2>
-            <p>Breve descripcion de mi</p>
-            <img id="photo" src="https://placehold.co/600x400" alt="photo">
+            <h2 class="subtitle">Acerca de mi</h2>
+            <p class="sobremi">Hola, soy Olivier! Soy un joven estudiante de desarrollador web ecuatoriano que busca
+                aprender nuevas tecnologías siempre que puede. Apasionado en los detalles
+                visuales que enriquecen la experiencia de usuario. Considero que una experiencia
+                de usuario gratificante es equivalente a una atención de primera mano en cualquier servicio.
+                
+            </p>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img id="photo" src="FotoOlivier.jpg" alt="Foto De Olivier">
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="title">
+                            Desarrollador Web<br>
+                            23 años
+                            olirmarq@espol.edu.com<br>
+                            +593 979456548
+                            </p>
+                    </div>
+                </div>
+            </div>
+            
         </section>
 
 
@@ -63,35 +66,34 @@
             </ol>
         </section>
         <section id="experiencia">
-            <h2>Experiencia</h2>
+            <h2>Habilidades Técnicas</h2>
 
 
 
 
         </section>
-        <section id="mapa" class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.2464893695687!2d-79.97046958352479!3d-2.145878873522568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e0!3m2!1ses!2sec!4v1728488591504!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-
-
-        </section>    
-        <section id="formulario" class="formulario">
+        <section id="contacto" class="contacto">
             <h2>Contactame</h2>
-            <form method="get">
-                <label for="nombre">Nombre Completo</label><input type="text" id="nombre" name="nombre" required>
-                <label for="correo">Correo Electrónico</label><input type="email" id="correo" name="correo" required>
-                <label>Habilidades Técnicas:</label><br>
-                <input type="checkbox" name="habilidades" value="HTML"> HTML
-                <input type="checkbox" name="habilidades" value="CSS"> CSS
-                <input type="checkbox" name="habilidades" value="JavaScript">
-                JavaScript
-                <button type="submit">Enviar</button>    
-            </form>    
-        </section>    
-
-
-
-
-
+            <div class="wrapper2 wrapper1 ">
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.2464893695687!2d-79.97046958352479!3d-2.145878873522568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e0!3m2!1ses!2sec!4v1728488591504!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <form id="formularioContacto">
+                    <ul> 
+                        <li><label for="nombre">Full Name/Nombre Completo</label><br><input type="text" id="nombre" name="nombre" required></li>
+                        <li><label for="correo">Email/Correo Electrónico</label><br><input type="email" id="correo" name="correo" required></li>
+                        <li><textarea for="mensaje" placeholder="Your Message... " required></textarea></li>
+                        <li> 
+                            <button>
+                                <span class="button_top">Enviar</span>
+                            </button> 
+                        </li>
+                    </ul>
+                </form> 
+                
+            </div>
+        </section>  
+        <footer>   
+        </footer> 
     </body>
 </html>
