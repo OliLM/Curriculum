@@ -5,20 +5,19 @@
         <title>
             Curriculum Vitae de Olivier Leon
         </title>
+        <header>
+            <h1>Olivier Raphael Leon Marquez</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="#educacion">Estudios</a></li>
+                    <li><a href="#resumen">Acerca de mi</a></li>
+                    <li><a href="#experiencia">Habilidades Técnicas</a></li>
+                    <li><a href="#contacto">Contáctame</a></li>
+                </ul>
+            </nav>    
     </head>
     <body>
-        <header>
-        <h1>Olivier Raphael Leon Marquez</h1>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="#educacion">Formación Acádemica </a></li>
-                <li><a href="#resumen">Acerca de mi</a></li>
-                <li><a href="#experiencia">Habilidades Técnicas</a></li>
-                <li><a href="#contacto">Contáctame</a></li>
-            </ul>
-        </nav>    
-
         <section id="resumen">
             <h2 class="subtitle">Acerca de mi</h2>
             <p class="sobremi">Hola, soy Olivier! Soy un joven estudiante de desarrollador web ecuatoriano que busca
@@ -48,27 +47,41 @@
 
         </h3>
         <section id="educacion"> 
-            <h2 class="subtitle">Formación Acádemica</h2>
-            <ol type="1">
-                <li>Escuela Superior Politécnica del Litoral
-                    <ul>
-                        <li>
-                            Carrera: Computación
-                        </li>
-                        <li>
-                            Fecha de inicio: May 2021
-                        </li>
-                        <li>
-                            Fecha de culiminación: 
-                        </li>
-                    </ul>
-                </li>
-            </ol>
+            <h2 class="subtitle">Estudios</h2>
+            <table>
+                <tr>
+                    <td>
+                        <strong>Escuela Superior Politécnica del Litoral</strong><br>
+                        <ul>
+                            <li>Carrera: Computación</li>
+                            <li>Fecha de inicio: Mayo 2021</li>
+                            <li>Fecha de culminación: Pendiente</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img src="Espol_Logo_2023.png" alt="Logo de la espol" width="300">
+                    </td>
+                </tr>
+            </table>
         </section>
         <section id="experiencia">
             <h2>Habilidades Técnicas</h2>
-
-
+            <div class="iconos">
+                <div class="card">
+                    <img src="Python.png" alt="Python logo">
+                </div>
+                <div class="card">  
+                    <img src="HTML.png" alt="HTML logo" >
+                </div>  
+                <div class="card">
+                    <img src="CSS.png" alt="css logo" >
+                </div>    
+                <div class="card">
+                    <img src="Java.png" alt="java logo">
+                </div>
+                
+                
+            </div>
 
 
         </section>
@@ -81,8 +94,8 @@
                 <form id="formularioContacto">
                     <ul> 
                         <li><label for="nombre">Full Name/Nombre Completo</label><br><input type="text" id="nombre" name="nombre" required></li>
-                        <li><label for="correo">Email/Correo Electrónico</label><br><input type="email" id="correo" name="correo" required></li>
-                        <li><textarea for="mensaje" placeholder="Your Message... " required></textarea></li>
+                        <li><label for="correo">Email/Correo Electrónico</label><br><input type="email" id="correo" name="correo" required placeholder="ejemplo@dominio.com"></li>
+                        <li><label>Mensaje</label><textarea for="mensaje" placeholder="Tu mensaje aquí... " required></textarea></li>
                         <li> 
                             <button>
                                 <span class="button_top">Enviar</span>
@@ -93,7 +106,8 @@
                 
             </div>
         </section>  
-        <footer>   
+        <footer>
+            <p> Curriculum Vitae - Olivier Leon © </p>  
         </footer> 
     </body>
 </html>
