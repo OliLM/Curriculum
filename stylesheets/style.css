@@ -275,25 +275,21 @@ label {
 }
 
 
-#contacto .wrapper1 {
+#contacto .wrapper2-wrapper1 {
+    width: 100%;
     padding-top: 10px ;
     text-align: left;
-    grid-template-columns: repeat(2,minmax(800px,200px));
 }
 
+.contacto {
+    width: auto;
+    height: auto;
+}
 
 .wrapper2{
+    width: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-    
-}
-
-.wrapper1{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;  
 }
 
 iframe{
@@ -316,9 +312,6 @@ iframe{
     height: 450px;
     
 }
-
-
-
 
 button {
     --button_radius: 0.75em;
@@ -355,7 +348,7 @@ button:active .button_top {
 }
 
 #formularioContacto ul {
-    padding: 10px;
+    padding: 2%;
     border: 5px solid transparent;
     border-radius: 3px;
     font-size: 1.1rem;
@@ -365,18 +358,18 @@ button:active .button_top {
 #formularioContacto li {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 1%;
 }
 
 #formularioContacto label {
     font-size: 1.2rem;
-    margin-bottom: 5px;
+    margin-bottom: 1%;
     color: #001F3F;
     font-weight: bold;
 }
 
 #formularioContacto input,textarea {
-    padding: 10px;
+    padding: 2%;
     border: 3px solid #001F3F;
     border-radius: 3px;
     font-size: 1.1rem;
@@ -393,20 +386,20 @@ button:active .button_top {
 }
 
 .iconos img {
-    width: 90px;
-    height: 125px;
+    width: 50%;
+    height: 50%;
 }
 
 .iconos img:hover{
-    width: 100px;
-    height: 150px;
+    width: 65%;
+    height: 65%;
     transition: all 0.4ms ease-out;
 }
 
 
 .card {
-    width: 190px;
-    height: 254px;
+    width: 10.5rem;
+    height: 12rem;
     background: transparent;
     position: relative;
     display: flex;
@@ -418,14 +411,12 @@ button:active .button_top {
   
   .card img {
     z-index: 1;
-    color: white;
-    font-size: 2em;
   }
   
   .card::before {
     content: '';
     position: absolute;
-    width: 100px;
+    width: 10%;
     background-image: linear-gradient(180deg, rgb(224, 38, 5), rgb(255, 0, 179));
     height: 130%;
     animation: rotBGimg 3s linear infinite;
